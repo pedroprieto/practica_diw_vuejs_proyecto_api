@@ -7,13 +7,14 @@ var api = new ApiBuilder(),
 
 const tableName = process.env.TABLE_NAME;
 
+var links = [
+    {rel: "collection", href: "/movies"},
+    {rel: "collection", href: "/books"},
+];
+
 // Función para generar listas de items en formato Collection + JSON a partir
 // de la lista de elementos de la tabla en DynamoDB
-function genCol(colType, colHref, fields, itemTitle) {
-    var links = [
-        {rel: "collection", href: "/movies"},
-        {rel: "collection", href: "/books"},
-    ];
+function genCol(colTitle, colType, colHref, fields, itemTitle) {
 
     var condExp = (!itemTitle) ? 'kind = :kind' : 'kind = :kind and title = :title';
 
@@ -48,6 +49,7 @@ function genCol(colType, colHref, fields, itemTitle) {
                 collection: {
                     version: '1.0',
                     href: colHref,
+                    title: colTitle,
                     links: links,
                     items: items,
                     template: {
@@ -128,28 +130,40 @@ var bookFields = [
     }
 ];
 
+// Root route
+api.get('/', function (request) {
+    return {
+        collection: {
+            version: '1.0',
+            title: 'Biblioteca multimedia',
+            href: '/',
+            links: links
+        }
+    }
+});
+
 // Get Movie Collection
 api.get('/movies', function (request) { // GET all movies
-    return genCol('movie', '/movies', movieFields, false );
+    return genCol('Películas', 'movie', '/movies', movieFields, false );
 
 });
 
 // Get Movie Item
 api.get('/movies/{movie}', function (request) {
     var movieName = querystring.unescape(request.pathParams.movie);
-    return genCol('movie', '/movies', movieFields, movieName);
+    return genCol('Película ' + movieName, 'movie', '/movies', movieFields, movieName);
 });
 
 // Get Book Collection
 api.get('/books', function (request) {
-    return genCol('book', '/books', bookFields, false );
+    return genCol('Libros', 'book', '/books', bookFields, false );
 
 });
 
 // Get Book Item
 api.get('/books/{book}', function (request) {
     var bookName = querystring.unescape(request.pathParams.book);
-    return genCol('book', '/books', bookFields, bookName);
+    return genCol('Libro ' + bookName, 'book', '/books', bookFields, bookName);
 });
 
 
