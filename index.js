@@ -50,6 +50,7 @@ function genCol(colTitle, colType, colHref, fields, itemTitle) {
                     version: '1.0',
                     href: colHref,
                     title: colTitle,
+                    type: colType,
                     links: links,
                     items: items,
                     template: {
@@ -57,7 +58,7 @@ function genCol(colTitle, colType, colHref, fields, itemTitle) {
                             return {
                                 name: f.name,
                                 prompt: f.prompt,
-                                type: f.type
+                                type: f.typeTemp
                             }
                         })
                     },
@@ -71,26 +72,31 @@ var movieFields = [
     {
         name: 'title',
         prompt: 'Título',
+        typeTemp: 'text',
         type: 'text'
     },
     {
         name: 'director',
         prompt: 'Director',
+        typeTemp: 'text',
         type: 'text'
     },
     {
         name: 'description',
         prompt: 'Descripción',
+        typeTemp: 'textarea',
         type: 'textarea'
     },
     {
         name: 'embedUrl',
         prompt: 'Trailer en Youtube',
+        typeTemp: 'text',
         type: 'embeddedVideo'
     },
     {
         name: 'datePublished',
         prompt: 'Fecha de estreno',
+        typeTemp: 'date',
         type: 'date'
     }
 ];
@@ -101,31 +107,37 @@ var bookFields = [
     {
         name: 'title',
         prompt: 'Título',
+        typeTemp: 'text',
         type: 'text'
     },
     {
         name: 'author',
         prompt: 'Autor',
+        typeTemp: 'text',
         type: 'text'
     },
     {
         name: 'description',
         prompt: 'Descripción',
+        typeTemp: 'textarea',
         type: 'textarea'
     },
     {
         name: 'isbn',
         prompt: 'ISBN',
+        typeTemp: 'text',
         type: 'text'
     },
     {
         name: 'image',
         prompt: 'Imagen de portada',
+        typeTemp: 'text',
         type: 'image'
     },
     {
         name: 'datePublished',
         prompt: 'Fecha de publicación',
+        typeTemp: 'date',
         type: 'date'
     }
 ];
