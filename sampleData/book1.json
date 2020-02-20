@@ -1,0 +1,9 @@
+{
+    "kind": {"S": "book"},
+    "title": {"S": "Drácula"},
+    "author": {"S": "Bram Stoker"},
+    "description": {"S": "Drácula es una novela publicada en 1897 por el irlandés Bram Stoker, quien ha convertido a su protagonista en el vampiro más famoso. Se dice que el escritor se basó en las conversaciones que mantuvo con un erudito húngaro llamado Arminius Vámbéry, quien le habló de Vlad Drăculea. La novela, escrita de manera epistolar, presenta otros temas, como el papel de la mujer en la época victoriana, la sexualidad, la inmigración, el colonialismo o el folclore. Como curiosidad, cabe destacar que Bram Stoker no inventó la leyenda vampírica, pero la influencia de la novela ha logrado llegar al cine, el teatro y la televisión."},
+    "isbn": {"S": "0-30-735016-9"},
+    "image": {"S": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Stoker_Dracula.jpg/460px-Stoker_Dracula.jpg"},
+    "datePublished": {"S": "1897-05-26"}
+}

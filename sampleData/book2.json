@@ -1,0 +1,9 @@
+{
+    "kind": {"S": "book"},
+    "title": {"S": "El Retrato de Dorian Gray"},
+    "author": {"S": "Oscar Wilde"},
+    "description": {"S": "El retrato de Dorian Gray (original en inglés: The Picture of Dorian Gray) es una novela escrita por el autor irlandés Oscar Wilde, publicada en el Lippincotts Monthly Magazine el 20 de junio de 1890.1 Posteriormente, Wilde revisaría la obra, haría varias modificaciones y agregaría nuevos capítulos. La versión modificada fue publicada por Ward, Lock, and Company en abril de 1891."},
+    "isbn": {"S": "0-14-143957-2"},
+    "image": {"S": "https://upload.wikimedia.org/wikipedia/commons/8/86/The_Picture_of_Dorian_Gray.jpg"},
+    "datePublished": {"S": "1890-06-20"}
+}

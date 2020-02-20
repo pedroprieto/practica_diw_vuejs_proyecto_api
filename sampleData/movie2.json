@@ -1,0 +1,8 @@
+{
+    "kind": {"S": "movie"},
+    "title": {"S": "Los Vengadores"},
+    "director": {"S": "Joss Whedon"},
+    "description": {"S": "The Avengers (The Avengers: Los Vengadores en Latinoamérica y Los Vengadores en España) es una película de superhéroes estadounidense producida por Marvel Studios y distribuida por Walt Disney Pictures, basado en el equipo de superhéroes de Marvel Comics del mismo nombre. Es parte del Universo Cinematográfico de Marvel, que enlaza varias películas de superhéroes de Marvel como Iron Man (2008), El Increíble Hulk (2008), Iron Man 2 (2010), Thor (2011) y Capitán América: el primer vengador (2011)."},
+    "embedUrl": {"S": "https://www.youtube.com/embed/HQIiYqOVTWo"},
+    "datePublished": {"S": "2012-04-25"}
+}

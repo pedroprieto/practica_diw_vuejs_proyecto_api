@@ -1,0 +1,8 @@
+{
+    "kind": {"S": "movie"},
+    "title": {"S": "Alta Fidelidad"},
+    "director": {"S": "Stephen Frears"},
+    "description": {"S": "Rob Gordon (John Cusack) es el propietario de una tienda de discos de Chicago a punto de quebrar y en la que sólo se venden discos de vinilo. Rob comparte su afición por el clásico material con sus dos empleados, Dick (Todd Louiso) y Barry (Jack Black). En la tienda, los tres reflexionan y discuten sobre la música que aman. Pero Rob tiene otro problema: quiere volver con su antigua novia Laura (Iben Hjejle), que está saliendo con otro chico."},
+    "embedUrl": {"S": "https://www.youtube.com/embed/cxFFRhNovbo"},
+    "datePublished": {"S": "2000-05-19"}
+}

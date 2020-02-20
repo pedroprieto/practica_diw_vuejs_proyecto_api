@@ -1,0 +1,9 @@
+{
+    "kind": {"S": "book"},
+    "title": {"S": "Juego de Tronos"},
+    "author": {"S": "George R.R. Martin"},
+    "description": {"S": "Juego de tronos —título original en inglés: A Game of Thrones— es una novela de fantasía escrita por el autor estadounidense George R. R. Martin en 1996 y ganadora del premio Locus en 1997. Se trata de la primera entrega de la serie de gran popularidad Canción de hielo y fuego. La novela se caracteriza por el uso de numerosos personajes bien detallados, la contraposición de puntos de vista de los múltiples protagonistas, su trama con giros inesperados y un uso sutil y moderado de los aspectos mágicos tan comunes en otras obras de fantasía."},
+    "isbn": {"S": "0-55-310354-7"},
+    "image": {"S": "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"},
+    "datePublished": {"S": "1996-08-06"}
+}

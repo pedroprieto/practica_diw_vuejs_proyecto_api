@@ -1,0 +1,8 @@
+{
+    "kind": {"S": "movie"},
+    "title": {"S": "El Señor de los Anillos"},
+    "director": {"S": "Peter Jackson"},
+    "description": {"S": "Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas como los hobbits, los elfos o los enanos, así como por muchas otras criaturas reales y fantásticas. La novela narra el viaje del protagonista principal, el hobbit Frodo Bolsón, para destruir el Anillo Único y la consiguiente guerra que provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el Señor oscuro Sauron."},
+    "embedUrl": {"S": "https://www.youtube.com/embed/uuUEqTKn5Ho"},
+    "datePublished": {"S": "2001-12-19"}
+}

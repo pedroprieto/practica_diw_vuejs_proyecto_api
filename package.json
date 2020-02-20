@@ -1,0 +1,26 @@
+{
+    "name": "practica_diw_vuejs_proyecto_api",
+    "version": "1.0.0",
+    "description": "API Collection + JSON para práctica de Proyecto de VueJS",
+    "main": "index.js",
+    "config": {
+        "tableName": "multimediaDatabase",
+        "region": "eu-west-1"
+    },
+    "scripts": {
+        "deployLambda": "claudia create --region $npm_package_config_region --api-module index --policies policy.json --set-env TABLE_NAME=$npm_package_config_tableName",
+        "destroyLambda": "claudia destroy",
+        "updateLambda": "claudia update",
+        "createTable": "./create_table.sh $npm_package_config_tableName",
+        "destroyTable": "./delete_table.sh $npm_package_config_tableName",
+        "deployApp": "npm run createTable && npm run deployLambda",
+        "destroyApp": "npm run destroyLambda & npm run destroyTable",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Pedro Prieto",
+    "license": "GPL-3.0-or-later",
+    "dependencies": {
+        "aws-sdk": "^2.620.0",
+        "claudia-api-builder": "^4.1.2"
+    }
+}
