@@ -8,8 +8,8 @@ var api = new ApiBuilder(),
 const tableName = process.env.TABLE_NAME;
 
 var links = [
-    {rel: "collection", href: "/movies"},
-    {rel: "collection", href: "/books"},
+    {rel: "collection", href: "/movies", prompt: "Películas"},
+    {rel: "collection", href: "/books", prompt: "Libros"},
 ];
 
 // Función para generar listas de items en formato Collection + JSON a partir
