@@ -58,6 +58,7 @@ function genCol(colTitle, colType, colHref, fields, itemTitle) {
                             return {
                                 name: f.name,
                                 prompt: f.prompt,
+                                value: "",
                                 type: f.typeTemp
                             }
                         })
