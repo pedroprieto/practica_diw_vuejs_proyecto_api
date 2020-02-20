@@ -8,6 +8,9 @@ aws dynamodb create-table --table-name $1 \
     --region eu-west-1 \
     --query TableDescription.TableArn --output text
 
+# Wait for table to exist
+aws dynamodb wait table-exists --table-name $1
+
 # Sample data
 for file in ./sampleData/*.json; do
     aws dynamodb put-item --table-name $1 --item file://$file
