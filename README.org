@@ -1,0 +1,25 @@
+* API REST Collection + JSON
+  REST API based on [[http://www.amundsen.com/media-types/collection/][Collection + JSON]] hypermedia format by Mike Amundsen.
+
+  Provides CRUD operations to manage a multimedia library (books and movies).
+
+** Install
+   #+begin_src bash
+     npm install
+   #+end_src
+
+** AWS permissions
+   - ~LambdaFullAccess~
+   - ~AmazonAPIGatewayAdministrator~
+   - ~IAMFullAccess~ 
+
+** Deploy app in AWS
+   #+begin_src bash
+     npm run deployApp
+   #+end_src
+
+** Delete app in AWS
+   #+begin_src bash
+     npm run destroyApp
+   #+end_src
+
