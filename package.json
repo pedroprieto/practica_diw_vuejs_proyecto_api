@@ -20,7 +20,7 @@
     "author": "Pedro Prieto",
     "license": "GPL-3.0-or-later",
     "dependencies": {
-        "aws-sdk": "^2.620.0",
+        "aws-sdk": "^2.814.0",
         "claudia-api-builder": "^4.1.2"
     }
 }
